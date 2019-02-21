@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Schnip Login Screen </title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/a5screen2.css" rel="stylesheet">
+	<script src="js/a5.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	 
+</head>
+
+<body>
+		<div class="appbox" align="center">
+		
+			<!-- TOP -->
+			<div class="top_container" align="center">
+			<img src ="images/screen1_top.jpg" width="348" height="44" alt="Top Screen" usemap="#topmap">
+				<map name="topmap">
+					
+					<!-- SETTINGS DROPDOWN -->
+					<div class="dropdown">
+						<area shape="rect" coords="8,6,39,39" href="">
+							<div class="dropdown-content">
+							
+									<a href="#">Please Login First</a>
+									
+							</div>
+					</div>
+				</map>
+		</div>
+		<!-- Login -->
+		<div class="login" align="center">
+			<!-- START -->
+		<div id="facebookPhoto" class="profile">
+			<h3>Profile Photo</h3>
+			<img id="photo" class='img-responsive' width="212" height="212" src="images/login_icon.png" />
+		</div>
+			<!-- END -->
+			
+			<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+ 
+                   
+                    <div>
+                    	<p class="facebookLogin">Please login through Facebook
+                    	</br>
+							<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+							</fb:login-button>
+						</p>
+						<p hidden class="facebookLoginSuccess">
+							Login Successful
+						
+							</br>
+							 <button type="button" class="buttonSway" style="vertical-align:middle" onclick="javascript:window.location.href='main'">Enter</button>
+						</p>
+                    </div>
+
+                    	<!--  PLACEHOLDER FORM
+                     <form>
+                        <div class="form-group">
+                            <input type="text" onsubmit="validateForm()" class="form-control" name="getuser" placeholder="Your Username *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" onsubmit="validateForm()" class="form-control" name="getpass" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" "class="btnSubmit" value="Login" />
+                        </div>
+                        <div class="form-group">
+                            <a href="main" class="ForgetPwd">Click me to progress</a>
+                        </div>
+                    </form>
+
+                		-->
+                </div>
+            </div>
+
+			<script>
+
+			</script>
+		</div>
+		<!-- Bottom -->
+		<div>
+			<img src ="images/screen1_bot_blank.jpg" width="348" height="50">
+			
+		</div>
+
+	</div>
+</body>
+
+</html>
