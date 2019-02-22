@@ -14,9 +14,9 @@ exports.couponsexp= function(req, res) { 
 	res.render('coupon_expire', data_expire);
 }
 exports.couponsbar= function(req, res) { 
-	res.render('checkout', finalcheckout);
+	res.render('checkout', data_bar);
 }
 exports.couponscodes= function(req, res) { 
-	res.render('barcodes', finalcheckout);
+	res.render('barcodes', data_bar);
 }
 
