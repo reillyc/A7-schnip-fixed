@@ -1,4 +1,5 @@
 'use strict';
+var finalcheckout = require('../finalcheckout.json');
 
 var alaska_track = 'un';
 var baconwrapped_track = 'un';
@@ -11,16 +12,13 @@ var fillet_track = 'un';
 var flatiron_track = 'un';
 var grassbeef_track = 'un';
 
-var obj = [];
-
-
 
 function alaskaChange(){
 	var image = document.getElementById('alaska');
 	
 	if(alaska_track=='un'){
 		image.src='images/alaska_pressed.png';
-		alaska_track='pr';
+		alaska_track='pr';	
 
 	}else{
 		image.src='images/alaska_unpressed.png';
@@ -146,6 +144,7 @@ function cornishhensChange(){
  }
 
 function checkout(){
+	console.log("ran");
 	if(alaska_track == 'pr'){
  		var newcoupon = 
 			{
@@ -230,6 +229,7 @@ function checkout(){
  	console.log(finalcheckout);
  	window.location.href="checkout";
 }
+
 /*
  
  var heart_track = 'un';

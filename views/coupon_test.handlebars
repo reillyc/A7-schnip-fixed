@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Coupon Main Sort</title>
+	<title>Coupons page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,6 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/introHCI.js"></script>
 
 	<script src="js/a5.js"></script>
 	<script src="js/coupon.js"></script>
@@ -30,15 +29,21 @@
 <body>
 	<div style="border:none; padding:none; margin:none;">
 	
-	<img alt="" src="images/guac_unpressed.jpg" 
-            style="height: 159px; width: 325px" id="guac" onclick="guacChange();"  />
-	<img alt="" src="images/gran_unpressed.jpg" 
-            style="height: 159px; width: 325px" id="gran" onclick="granChange();"  />
-	<img alt="" src="images/pizza_unpressed.jpg" 
-            style="height: 159px; width: 325px" id="pizza" onclick="pizzaChange();"  />
-	<img alt="" src="images/spam_unpressed.jpg" 
-            style="height: 159px; width: 325px" id="spam" onclick="spamChange();"  />
+		{{#each coupons}}
+		<div class="coupons" id="{{product}}">
+			<img class="img-responsive img-rounded" src="{{imageURL}}">
+			<a class="link" href="#" ><h3>{{product}}</h3></a>
+			<p>{{brand}}</p>
+			<p>{{Deal}}</p>
+			<p>{{Saved}}</p>
+			<p>{{productId}}</p>
+			<img alt="" src="images/sheart_unpressed.jpg" 
+            style="height: 48px; width: 48px" id="heart" onclick="heartChange();"  />
+
+		</div>
+		<hr>
+		{{/each}}
+
 	</div>
 </body>
 </html>
-

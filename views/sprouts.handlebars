@@ -2,80 +2,97 @@
 
 <html>
 <head>
-	<title>Schnip - Sprouts Coupons</title>	
+	<title>Schnip Main Screen Wireframe</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/a5screen2.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/a5.js"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="css/a5screen2.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-		<div class="appbox" align="center">
+		<div class="appbox">
 		
-			<!-- TOP -->
-			<div class="top_container">
-			<div class="store_text">Sprouts Coupons</div>
-			<img src ="images/top.jpg" width="348" height="90" alt="Top Screen2" usemap="#topmap">
-				<map name="topmap">
-					
-					<!-- SETTINGS DROPDOWN -->
-					<div class="dropdown">
-						<area shape="rect" coords="8,6,39,39" href="">
-							<div class="dropdown-content">
-							
-									<br>
-									
-									<form action="/action_page.php">
-										<input type="checkbox" name="tooptipon" value=""> Tool tips
-									<br>
-									<br>
-									</form>
-
-									<form action="/action_page.php">
-										<input type="checkbox" name="locationon" value=""> Location
-									<br>
-									<br>
-									</form>
 			
-									<form action="/action_page.php">
-										<input type="checkbox" name="Notificationon" value=""> Notifications
-									<br>
-									<br>
-									</form>
+		<!-- TOP nav bar-->	
+		
 
-									<a href="preferences">Preferences</a>
-				
-									<a href="addcard">Add Loyalty Card</a>
-									
-									<a href="/">Sign Out</a>
-							</div>
+			<div class="row1" style="background-color:#6FC8CF" >
+                   <!-- drop down menu-->	
+				<div class="dropdown" style="background-color:#6FC8CF">
+					<img style="width:auto; height:45px" src ="images/menu.png">
+					<div class="dropdown-content">
+						
+
+						<a href="addcard">Add Loyalty Card</a>
+
+						<a href="/">Sign Out</a>
 					</div>
-					
-					<!-- SORT MENU -->
-					<div class="dropdownn">
-						<area shape="rect" coords="252,56,527,82" href="">
+					<br width= "100">
+				</div>
+
+			     <!-- logo-->	
+				<div class="col-xs-8">
+
+					<img style="width:auto; height:45px" src="images/schnip.png">
+				</div>
+			</div>
+			<!-- line space -->
+			<div class="row3" style="height:2px;"></div>
+
+			<!-- store name-->
+
+			<div class="row1" style="background-color:#ADD2D5" >
+				<div class="col-xs-10">
+                    <h2 style="font-family:Proxima Nova; color: #FFFFFF;  margin-top:5px">Sprouts Coupon</h2>
+				</div>
+				<div class="dropdownn"><button class="button">Sort</button>
 						<div class="dropdownn-content" style="right:0;">
 								<a href="couponjson" target="coupon_frame">Best Deals</a>
 								<a href="coupon_expire" target="coupon_frame">Expiring Soon</a>
 								<a href="coupon_cat" target="coupon_frame">Categories</a>
 							</div>
-					</div>
-				</map>
+				</div>
+
 			</div>
-			
+		
+					
+		
+					
+				
+			<!-- line space -->
+			<div class="row3" style="height:4px;"></div>
 			<!-- MIDDLE -->
-			<iframe name="coupon_frame" src="couponjson" style="border:none; padding:none; margin:none;" height="648" width="346"></iframe>
-			
-			<!-- BOTTOM -->
-			<div>
-			<img src ="images/bot_screen2.jpg" width="348" height="50" alt="Bot Screen2" usemap="#botmap">
-			<map name="botmap">
-				<area shape="rect" coords="11,12,48,41" href="main">
-				<area shape="circle" coords="321, 24, 24" href="checkout">
-			</map>
+			<div class="container">
+			<iframe name="coupon_frame" src="couponjson" style="border:none; padding:none" height="490" width="365"></iframe>
 			</div>
+			
+			 <!-- bottom nav bar -->
+			<div class="row2" style="background-color:#6FC8CF" >
+                 <div class="col-xs-1">
+					<a href="main"> 
+						<img style="height: 45px;" src="images/back.png">
+					</a>
+				</div>
+				<div class="col-xs-8"></div>
+				<div class="col-xs-2">
+					<a href="checkout">
+					 <img style="height: 45px;" src="images/cart.png">
+					</a>
+				</div>
+			</div>
+
+
 		</div>
 		</body>
 </html>

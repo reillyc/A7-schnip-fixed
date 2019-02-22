@@ -19,3 +19,4 @@ exports.couponsbar= function(req, res) { 
 exports.couponscodes= function(req, res) { 
 	res.render('barcodes', finalcheckout);
 }
+
