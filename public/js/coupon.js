@@ -1,5 +1,4 @@
 'use strict';
-var finalcheckout = require('../finalcheckout.json');
 
 var alaska_track = 'un';
 var baconwrapped_track = 'un';
