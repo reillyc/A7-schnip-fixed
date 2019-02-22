@@ -2,6 +2,7 @@ var data = require('../data.json');
 var data_cat = require('../data_cat.json');
 var data_expire = require('../data_expire.json');
 var data_bar = require('../data_bar.json');
+var finalcheckout = require('../finalcheckout.json');
 
 exports.couponslist = function(req, res) { 
 	res.render('couponjson', data);
@@ -13,8 +14,8 @@ exports.couponsexp= function(req, res) { 
 	res.render('coupon_expire', data_expire);
 }
 exports.couponsbar= function(req, res) { 
-	res.render('checkout', data_bar);
+	res.render('checkout', finalcheckout);
 }
 exports.couponscodes= function(req, res) { 
-	res.render('barcodes', data_bar);
+	res.render('barcodes', finalcheckout);
 }

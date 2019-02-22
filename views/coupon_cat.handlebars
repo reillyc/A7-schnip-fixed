@@ -30,10 +30,13 @@
 	
 		{{#each coupons}}
 		<div class="coupons" id="{{product}}">
-			<img class="img-responsive img-rounded" src="{{imageURL}}">
-			<a class="link" href="#" ><h3>{{product}}</h3></a>
-			<p>{{brand}}</p>
-			<p>{{Deal}}</p>
+			<img class="img-responsive img-rounded" id="{{productID}}" onclick="{{call}}" src="{{imageURL}}">
+			<a class="link" href="#" "><h3>{{product}}</h3></a>
+			<p>Product ID: {{productID}}</p>
+			<p>Catagory: {{catagory}}</p>
+			<p>Price: {{Deal}}</p>
+			<p>Saved: ${{Saved}}.00</p>
+
 		</div>
 		<hr>
 		{{/each}}
