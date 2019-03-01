@@ -1,9 +1,49 @@
 {
 	"coupons": [
 		{
+			"productID": "cornishhens",
+			"chicken": "true",
+			"product": "Cornish Game Hens",
+			"Deal": "$2.49/lb",
+			"Saved": "1",
+			"imageURL": "./images/cornishhens_unpressed.png",
+			"barcode": "./images/cornishhens_bar.png",
+			"call": "cornishhensChange();"
+		},
+		{
+			"productID": "fillet",
+			"fish": "true",
+			"product": "Fresh Dover Sole",
+			"Deal": "$6.99/lb",
+			"Saved": "1",
+			"imageURL": "./images/fillet_unpressed.png",
+			"barcode": "./images/fillet_bar.png",
+			"call": "filletChange();"
+		},
+		{
+			"productID": "flatiron",
+			"beef": "true",
+			"product": "Flat Iron Flank",
+			"Deal": "$8.99/lb",
+			"Saved": "2",
+			"imageURL": "./images/flatiron_unpressed.png",
+			"barcode": "./images/flatiron_bar.png",
+			"call": "flatironChange();"
+		},
+		{
+			"productID": "grassbeef",
+			"beef": "true",
+			"product": "Grass Fed Beef",
+			"Deal": "$7.99/lb",
+			"Saved": "1",
+			"imageURL": "./images/grassbeef_unpressed.png",
+			"barcode": "./images/grassbeef_bar.png",
+			"call": "grassbeefChange();"	
+		},
+		{
 
 			"productID": "alaska",
-			"catagory": "best",
+			"fish": "true",
 			"product": "Alaska CoD Fillet",
 			"Deal": "$7.99/lb",
 			"Saved": "1",
@@ -14,7 +54,7 @@
 		{
 
 			"productID": "baconwrapped",
-			"catagory": "best",
+			"beef": "true",
 			"product": "Bacon Wrapped Hot Dogs",
 			"Deal": "$5.99/each",
 			"Saved": "1",
@@ -24,7 +64,7 @@
 		},
 		{
 			"productID": "breadedchicken",
-			"catagory": "best",
+			"chicken": "true",
 			"product": "Breaded Chicken Selections",
 			"Deal": "$5.99/each",
 			"Saved": "2",
@@ -34,7 +74,7 @@
 		},
 		{
 			"productID": "buddinglunch",
-			"catagory": "expire",
+			"beef": "true",
 			"product": "Budding Lunchmeat",
 			"Deal": "$7.99/each",
 			"Saved": "1",
@@ -44,7 +84,7 @@
 		},
 		{
 			"productID": "chickenbreast",
-			"catagory": "expire",
+			"chicken": "true",
 			"product": "Boneless Skinless Chicken Breasts",
 			"Deal": "$7.99/lb",
 			"Saved": "2",
@@ -54,53 +94,13 @@
 		},
 		{
 			"productID": "cookedentrees",
-			"catagory": "expire",
+			"beef": "true",
 			"product": "Fully Cooked Entrees",
 			"Deal": "$5.99/each",
 			"Saved": "1",
 			"imageURL": "./images/cookedentrees_unpressed.png",
 			"barcode": "./images/cookedentrees_bar.png",
 			"call": "cookedentreesChange();"	
-		},
-		{
-			"productID": "cornishhens",
-			"catagory": "catagory",
-			"product": "Cornish Game Hens",
-			"Deal": "$2.49/lb",
-			"Saved": "1",
-			"imageURL": "./images/cornishhens_unpressed.png",
-			"barcode": "./images/cornishhens_bar.png",
-			"call": "cornishhensChange();"
-		},
-		{
-			"productID": "fillet",
-			"catagory": "catagory",
-			"product": "Fresh Dover Sole",
-			"Deal": "$6.99/lb",
-			"Saved": "1",
-			"imageURL": "./images/fillet_unpressed.png",
-			"barcode": "./images/fillet_bar.png",
-			"call": "filletChange();"
-		},
-		{
-			"productID": "flatiron",
-			"catagory": "catagory",
-			"product": "Flat Iron Flank",
-			"Deal": "$8.99/lb",
-			"Saved": "2",
-			"imageURL": "./images/flatiron_unpressed.png",
-			"barcode": "./images/flatiron_bar.png",
-			"call": "flatironChange();"
-		},
-		{
-			"productID": "grassbeef",
-			"catagory": "catagory",
-			"product": "Grass Fed Beef",
-			"Deal": "$7.99/lb",
-			"Saved": "1",
-			"imageURL": "./images/grassbeef_unpressed.png",
-			"barcode": "./images/grassbeef_bar.png",
-			"call": "grassbeefChange();"	
 		}
 		
     ]
