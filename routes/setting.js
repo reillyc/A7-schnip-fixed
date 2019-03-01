@@ -8,4 +8,7 @@ exports.returntosignin = function(req, res) { 
 	res.render('signout',)//'sprouts','vons',)
 }
 
+exports.loyalinfo = function(req, res) { 
+	res.render('addcard-b',)//'sprouts','vons',)
+}
 

@@ -14,6 +14,7 @@ var stores = require('./routes/stores');
 var coupons = require('./routes/coupons');
 var setting = require('./routes/setting');
 var users = require('./routes/users');
+var login = require('./routes/login');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 // Example route
@@ -21,7 +22,7 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-mongoose.connect('localhost:27017/users');
+//mongoose.connect('localhost:27017/users'); causing an error
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -63,16 +64,26 @@ app.get('/pavillions', stores.pavinfo);
 app.get('/wholefoods', stores.wholeinfo);
 app.get('/northgate', stores.northinfo);
 app.get('/swapmain', stores.swapinfo);
+app.get('/addcard-b', stores.loyalinfo);
 //Add routes here // add coupon handlebar
-app.get('/couponjson', coupons.couponslist);
-app.get('/coupon_cat', coupons.couponscata);
-app.get('/coupon_expire', coupons.couponsexp);
+app.get('/beef', coupons.beef);
+app.get('/fish', coupons.fish);
+app.get('/beverage', coupons.beverage);
+app.get('/snack', coupons.snack);
+app.get('/other', coupons.other);
+// app.get('/coupon_cat', coupons.couponscata);
+// app.get('/coupon_expire', coupons.couponsexp);
+// app.get('/couponjson', coupons.couponslist);
+app.get('/chicken', coupons.chicken);
 app.get('/checkout', coupons.couponsbar);
 app.get('/barcodes', coupons.couponscodes);
 //Add setting routes
 app.get('/preferences', setting.prefdisplay);
 app.get('/addcard', setting.addloyalty);
+app.get('/addcard-b', setting.loyalinfo);
 app.get('/signout', setting.returntosignin);
+app.get('/rsvp', login.adminView);
+app.post('/addRSVP', login.addRSVP);
 // Example route
 // app.get('/users', user.list);
 

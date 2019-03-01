@@ -1,5 +1,9 @@
 var projects = require('../projects.json');
 
+var data = {
+  rsvp: ['ixd@ucsd.edu']
+};
+
 /*
 var finalcheckout = require('../finalcheckout.json');
 
@@ -33,4 +37,17 @@ function checkUser(user, pass){
 
 exports.view = function(request, response){
   	response.render('index', projects);
+};
+
+exports.adminView = function(request, response){
+  response.render('/rsvp', data);
+};
+
+exports.addRSVP = function(request, response) {
+	var rsvpEmail = request.body.rsvpEmail;
+	console.log(rsvpEmail);
+
+	data.rsvp.push(rsvpEmail);
+
+	response.send(rsvpEmail);
 };

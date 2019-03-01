@@ -1,4 +1,43 @@
-'use strict';
+// 'use strict';
+
+// Call this function when the page loads (the "ready" event)
+$(document).ready(function() {
+  initializePage();
+
+});
+
+/*
+ * Function that is called when the document is ready.
+ */
+function initializePage() {
+	console.log("Page ready");
+
+ 	initNUMForm();
+ 	//initLogin();
+}
+
+
+// init RSVP form submit listener
+function initNUMForm() {
+  // add your code here
+  $('#numForm').submit(function(e) {
+  	e.preventDefault();
+  	console.log("submitting form..")
+  	var numForm = $('#numForm').val();
+    alert("Phone number successfully connected to all associated reward cards!");
+
+	$(".button1").text("Connected to the highlighted stores below!");
+
+	var image = document.getElementById('storess');
+	image.src='images/rewardpressed.png';
+
+
+
+  });
+
+ 
+
+}
 
 // Call this function when the page loads (the "ready" event)
 /*
